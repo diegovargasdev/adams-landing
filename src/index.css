@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand */
+  --color-primary: #3A3364;
+  /* Rhino - profesional y elegante */
+  --color-secondary: #7CDBB55;
+  /* Pastel Green - fresco */
+  --color-accent: #FC7C9C;
+  /* Tickle Me Pink - vibrante */
+
+  /* Neutrals */
+  --color-bg: #ffffff;
+  --color-surface: #f7f7f9;
+  /* Gris-lila muy suave */
+  --color-text: #1f2235;
+  /* Casi negro con tono azulado */
+  --color-muted: #71727f;
+  /* Gris neutral */
+}
+
+@theme {
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+
+  --color-bg: var(--color-bg);
+  --color-surface: var(--color-surface);
+  --color-text: var(--color-text);
+  --color-muted: var(--color-muted);
+}
+
+@keyframes floatBreath {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-float {
+  animation: floatBreath 3s ease-in-out infinite;
+}
