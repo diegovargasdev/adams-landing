@@ -24,7 +24,7 @@ export function Hero() {
 
                 <button
                     onClick={scrollToWorkshops}
-                    className="bg-accent text-primary px-10 py-4 rounded-lg font-semibold hover:opacity-90 transition"
+                    className="bg-accent text-primary px-10 py-4  rounded-lg font-semibold hover:opacity-90 transition cursor-pointer"
                 >
                     Ver talleres disponibles
                 </button>

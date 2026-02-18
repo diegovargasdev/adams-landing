@@ -4,8 +4,20 @@ import { WorkshopDetail } from "../components/WorkshopDetail";
 import { useState } from "react";
 import { Hero } from "../components/Hero";
 import { WhoWeAre } from "../components/WhoWeAre";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 
 export function Home() {
+
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.state?.scrollTo) {
+            const element = document.getElementById(location.state.scrollTo);
+            element?.scrollIntoView({ behavior: "smooth" });
+        }
+    }, [location]);
     const [selectedIndex, setSelectedIndex] = useState(0);
 
     return (
