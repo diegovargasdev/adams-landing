@@ -16,9 +16,7 @@ export function WorkshopDetail({ workshop }: WorkshopDetailProps) {
 
                     {/* Image */}
                     <div>
-                        <div className="aspect-[4/3] rounded-2xl overflow-hidden">
-                            Example of workshop image
-                        </div>
+                        <img src={workshop.detailImage} alt={workshop.title} className="w-full h-full object-cover" />
                     </div>
 
                     {/* Text Content */}

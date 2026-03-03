@@ -4,7 +4,7 @@ export interface Workshop {
     image: string;
     description: string;
     detailImage: string;
-
+    name?: string;
     date?: string;
     time?: string;
     modality?: string;

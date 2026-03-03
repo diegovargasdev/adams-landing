@@ -1,8 +1,10 @@
 
 import { socialLinks } from "../../data/socialLink";
+import { useNavigate } from "react-router-dom";
 
 
 export function Footer() {
+    const navigate = useNavigate();
 
     return (
         <footer className="bg-primary text-white">
@@ -64,7 +66,12 @@ export function Footer() {
                         <p className="text-white/80 text-sm">
                             ¿Te gustaría formar parte de nuestra misión y generar impacto positivo?
                         </p>
-                        <button className="bg-accent text-primary cursor-pointer px-5 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition">
+                        <button
+                            onClick={() => {
+                                navigate('/colabora');
+                                window.scrollTo(0, 0);
+                            }}
+                            className="bg-accent text-primary cursor-pointer px-5 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition">
                             Ver vacantes
                         </button>
                     </div>

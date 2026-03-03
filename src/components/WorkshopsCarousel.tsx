@@ -62,9 +62,7 @@ export function WorkshopsCarousel({
                                             }
                                         `}
                                     >
-                                        <div className="aspect-[4/3] overflow-hidden">
-                                            Example of workshop image
-                                        </div>
+                                        <img src={workshop.image} alt={workshop.title} className="w-full h-40 object-cover" />
 
                                         <div className="p-6">
                                             <h3 className="text-primary font-semibold">

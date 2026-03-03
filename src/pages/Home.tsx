@@ -6,6 +6,7 @@ import { Hero } from "../components/Hero";
 import { WhoWeAre } from "../components/WhoWeAre";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { HelpSection } from "../components/HelpSection";
 
 
 export function Home() {
@@ -30,6 +31,7 @@ export function Home() {
                 onSelectWorkshop={setSelectedIndex}
             />
             <WorkshopDetail workshop={workshops[selectedIndex]} />
+            <HelpSection />
         </>
     );
 }

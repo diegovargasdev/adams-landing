@@ -4,13 +4,14 @@ import type { Workshop } from "../types/workshop";
 export const workshops: Workshop[] = [
     {
         id: 1,
+        name: "lifeSkills",
         title: "Habilidades para la vida",
         image:
-            "https://images.unsplash.com/photo-1631962758485-3fd6ab86e14a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZWFjZWZ1bCUyMG1lZGl0YXRpb258ZW58MXx8fHwxNzY2OTcyNTU0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+            "/workShop/lifeSkills/image.jpg",
         description:
             "Las habilidades para la vida son un concepto que fue propuesto por la Organización Mundial de la Salud (OMS) en el año 1993 y ha sido referente para guiar acciones de educación socio-emocional en ámbitos educativos.",
         detailImage:
-            "https://images.unsplash.com/photo-1631962758485-3fd6ab86e14a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZWFjZWZ1bCUyMG1lZGl0YXRpb258ZW58MXx8fHwxNzY2OTcyNTU0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+            "/workShop/lifeSkills/detailImage.jpg",
         date: "15 de febrero, 2026",
         time: "10:00 AM - 12:00 PM",
         modality: "Presencial / Virtual",
@@ -30,13 +31,14 @@ export const workshops: Workshop[] = [
     },
     {
         id: 2,
+        name: "selfEsteem",
         title: "Mujeres frente al espejo",
         image:
-            "https://images.unsplash.com/photo-1760123206802-be3779a73809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYW1pbHklMjB3ZWxsYmVpbmclMjBoYXBweXxlbnwxfHx8fDE3NjY5NzI1NTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+            "/workShop/selfEsteem/image.jpg",
         description:
             "El conocer las partes que componen el 'yo', sus manifestaciones, necesidades y habilidades; saber por que actuamos, como lo hacemos y como nos sentimos, es fundamental en el desarrollo de una autoestima sana a final de cuentas.",
         detailImage:
-            "https://images.unsplash.com/photo-1760123206802-be3779a73809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYW1pbHklMjB3ZWxsYmVpbmclMjBoYXBweXxlbnwxfHx8fDE3NjY5NzI1NTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+            "/workShop/selfEsteem/detailImage.jpg",
         date: "20 de marzo, 2026",
         time: "2:00 PM - 4:00 PM",
         modality: "Presencial",
@@ -56,6 +58,7 @@ export const workshops: Workshop[] = [
     },
     {
         id: 3,
+        name: "lifeMeaning",
         title: "Sentido de vida",
         image:
             "https://images.unsplash.com/photo-1623826538391-4e066d422976?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZW50YWwlMjBoZWFsdGglMjBjYWxtfGVufDF8fHx8MTc2Njk3MjU1NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
@@ -82,6 +85,7 @@ export const workshops: Workshop[] = [
     },
     {
         id: 4,
+        name: "vocationalGuidance",
         title: "Orientación vocacional",
         image:
             "https://images.unsplash.com/photo-1747146114146-8b8597a53ad4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXBwb3J0JTIwZ3JvdXAlMjB3b3Jrc2hvcHxlbnwxfHx8fDE3NjY5NzI1NTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
@@ -108,6 +112,7 @@ export const workshops: Workshop[] = [
     },
     {
         id: 5,
+        name: "selfEsteemKids",
         title: "Cambiando mi estrella",
         image:
             "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoZWxwaW5nJTIwaGFuZHN8ZW58MXx8fHwxNzY2OTczMTcyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
