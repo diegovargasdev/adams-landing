@@ -16,7 +16,7 @@ export function WorkshopDetail({ workshop }: WorkshopDetailProps) {
 
                     {/* Image */}
                     <div>
-                        <img src={workshop.detailImage} alt={workshop.title} className="w-full h-full object-cover" />
+                        <img src={workshop.image} alt={workshop.title} className="w-full h-full object-cover" />
                     </div>
 
                     {/* Text Content */}

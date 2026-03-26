@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 export function Footer() {
     const navigate = useNavigate();
+    const currentYear = new Date().getFullYear();
 
     return (
         <footer className="bg-primary text-white">
@@ -31,9 +32,8 @@ export function Footer() {
                     <div className="space-y-4">
                         <h4 className="font-semibold">Contáctanos</h4>
                         <div className="space-y-2 text-white/80 text-sm">
-                            <p>Email: support@safespace.org</p>
-                            <p>Teléfono: (555) 123-4567</p>
-                            <p>Línea de apoyo: 1-800-555-HELP</p>
+                            <p>Email: contacto@armoniafamiliar.org</p>
+                            <p>Teléfono: +52 (55) 6974-1564</p>
                         </div>
                     </div>
 
@@ -82,7 +82,7 @@ export function Footer() {
                 <div className="pt-8 border-t border-white/20">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-white/60 text-sm">
                         <p>
-                            © 2026 Armonía Familiar. Organización sin fines de lucro.
+                            © {currentYear} Armonía Familiar.
                         </p>
 
                         <div className="flex gap-6">

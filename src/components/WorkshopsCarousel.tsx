@@ -38,7 +38,7 @@ export function WorkshopsCarousel({
 
                         <button
                             onClick={handlePrevious}
-                            className="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:opacity-90 transition"
+                            className="flex-shrink-0 cursor-pointer w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:opacity-90 transition"
                             aria-label="Taller anterior"
                         >
                             <ChevronLeft className="w-6 h-6 cursor-pointer" />
@@ -62,7 +62,7 @@ export function WorkshopsCarousel({
                                             }
                                         `}
                                     >
-                                        <img src={workshop.image} alt={workshop.title} className="w-full h-40 object-cover" />
+                                        <img src={workshop.image} alt={workshop.title} className="w-full h-40 object-scale-down" />
 
                                         <div className="p-6">
                                             <h3 className="text-primary font-semibold">
@@ -75,7 +75,7 @@ export function WorkshopsCarousel({
                         </div>
                         <button
                             onClick={handleNext}
-                            className="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:opacity-90 transition"
+                            className="flex-shrink-0 w-12 h-12 cursor-pointer rounded-full bg-primary text-white flex items-center justify-center hover:opacity-90 transition"
                             aria-label="Siguiente taller"
                         >
                             <ChevronRight className="w-6 h-6 cursor-pointer" />

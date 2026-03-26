@@ -12,7 +12,7 @@ export function ContactInfo() {
                 <div>
                     <p className="font-medium text-[#3A3364]">Teléfono</p>
                     <p className="text-sm text-[#3A3364]/80">
-                        +52 (55) 5254-6933
+                        +52 (55) 6974-1564
                     </p>
                 </div>
             </div>
@@ -38,7 +38,7 @@ export function ContactInfo() {
                 <div>
                     <p className="font-medium text-[#3A3364]">Ubicación</p>
                     <p className="text-sm text-[#3A3364]/80">
-                        Miguel Hidalgo, CDMX
+                        Calle Descartes 70, Col. Anzures, Alcaldia Miguel Hidalgo, C.P.11590 , CDMX
                     </p>
                 </div>
             </div>

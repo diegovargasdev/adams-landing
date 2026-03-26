@@ -8,7 +8,7 @@ export interface Workshop {
     date?: string;
     time?: string;
     modality?: string;
-
+    realImages?: string[];
     objectives?: string[];
     content?: string[];
 }

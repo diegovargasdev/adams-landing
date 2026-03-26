@@ -14,7 +14,7 @@ export function HelpSection() {
                     {/* Imagen */}
                     <div>
                         <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
-
+                            <img src="/logo/us.jpeg" alt="Imagen de apoyo emocional" className="w-full h-full object-cover" />
                         </div>
                     </div>
 
@@ -56,7 +56,7 @@ export function HelpSection() {
                         {/* CTA */}
                         <div className="pt-6">
                             <a
-                                href="https://wa.me/525552546933"
+                                href="https://wa.me/5569741564"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-block bg-[#7CDB55] text-[#3A3364] px-8 py-4 rounded-lg font-medium hover:bg-[#6CC945] transition-all duration-300 hover:scale-105 shadow-md"
