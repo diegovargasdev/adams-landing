@@ -1,4 +1,4 @@
-import type { Workshop } from "../types/workshop";
+import type { Activity, Workshop } from "../types/workshop";
 
 
 export const workshops: Workshop[] = [
@@ -265,10 +265,10 @@ export const workshops: Workshop[] = [
         id: 10,
         name: "childAbusePrevention",
         title: "Prevención abuso sexual infantil",
-        image: "/workShop/childAbusePrevention/image.jpg",
+        image: "/workShop/childAbusePrevention/image.png",
         description:
             "Taller enfocado en brindar a niñas y niños de 6 a 10 años herramientas básicas para identificar situaciones de riesgo, reconocer su derecho a la seguridad personal y expresar sus emociones, fomentando la confianza para pedir ayuda y protegerse.",
-        detailImage: "/workShop/childAbusePrevention/detailImage.jpg",
+        detailImage: "/workShop/childAbusePrevention/detailImage.png",
         date: "Por definir",
         time: "Por definir",
         modality: "Presencial",
@@ -294,7 +294,7 @@ export const workshops: Workshop[] = [
         id: 11,
         name: "feelToWin",
         title: "Sentir para ganar",
-        image: "/workShop/feelToWin/image.jpg",
+        image: "/workShop/feelToWin/image.png",
         description:
             "Taller enfocado en fortalecer la inteligencia emocional de deportistas y atletas, desarrollando habilidades para reconocer, gestionar y regular sus emociones, con el objetivo de mejorar su rendimiento deportivo y bienestar psicológico.",
         detailImage: "/workShop/feelToWin/detailImage.jpg",
@@ -319,4 +319,47 @@ export const workshops: Workshop[] = [
             "Dinámicas prácticas aplicadas al contexto deportivo"
         ]
     }
+];
+
+export const activities: Activity[] = [
+    {
+        id: "cinedebate",
+        title: "Cinedebate",
+        subtitle: "Público en general • Duración: 2 horas",
+        image: "/knowUs/cinedebate.png",
+        details:
+            "Evento donde a través de una película se busca concientizar a las personas sobre distintas temáticas.",
+    },
+    {
+        id: "platica",
+        title: "Plática con Armonía",
+        subtitle: "Cada lunes 11:30 a.m. en Facebook Live",
+        image: "/knowUs/harmonyConversation.png",
+        details:
+            "Sección especial de nuestra página de Facebook donde conversamos sobre salud mental y bienestar emocional, generando conexión y conciencia.",
+    },
+    {
+        id: "psicometrica",
+        title: "Evaluaciones Psicométricas",
+        subtitle: "Medición confiable para comprensión y diagnóstico",
+        image: "/knowUs/psychometricAssessments.png",
+        details:
+            "Usamos herramientas psicométricas válidas para evaluar características psicológicas, cognitivas, emocionales y conductuales. Facilita diagnóstico, orientación y toma de decisiones educativas, clínicas, laborales y de desarrollo personal.",
+    },
+    {
+        id: "vocacional",
+        title: "Batería de Orientación Vocacional",
+        subtitle: "Adolescentes y jóvenes • Duración: 2 sesiones",
+        image: "/knowUs/vocationalBattery.png",
+        details:
+            "Acompañamos la exploración de intereses, habilidades, valores y opciones profesionales para decisiones informadas sobre educación y carrera.",
+    },
+    {
+        id: "terapia-grupal",
+        title: "Terapia Grupal",
+        subtitle: "Adolescentes, jóvenes y adultos",
+        image: "/knowUs/groupTherapy.png",
+        details:
+            "Espacio seguro para explorar emociones, compartir experiencias y desarrollar habilidades con apoyo de grupo y terapeuta. Beneficios: reduce aislamiento, normaliza experiencias, mejora empatía, asertividad, autorregulación y brinda retroalimentación constructiva.",
+    },
 ];

@@ -98,9 +98,8 @@ export default function WorkshopDetailPage() {
                                 {workshop.modality}
                             </div>
                         </div>
-
                         {/* CTA */}
-                        <a href="https://forms.gle/XV5HfRdj1NtWJ7bm9" target="_blank" rel="noopener noreferrer">
+                        <a href="https://forms.gle/mVaQMqCKmAsR5YtQ7" target="_blank" rel="noopener noreferrer">
                             <button className="w-full bg-[#7CDB55] text-[#3A3364] py-4 rounded-lg text-lg hover:bg-[#6CC945] transition-colors cursor-pointer">
                                 Quiero asistir
                             </button>
@@ -268,7 +267,7 @@ export default function WorkshopDetailPage() {
                                 <p>📱 Teléfono: +52 (55) 6974-1564</p>
                                 <p>📍 Dirección: Calle Descartes 70, Col. Anzures, Alcaldia Miguel Hidalgo, C.P.11590 , CDMX</p>
                             </div>
-                            <a href="https://forms.gle/XV5HfRdj1NtWJ7bm9" target="_blank" rel="noopener noreferrer">
+                            <a href="https://forms.gle/mVaQMqCKmAsR5YtQ7" target="_blank" rel="noopener noreferrer">
                                 <button className="px-8 py-4 rounded-lg text-lg font-semibold bg-[#7CDB55] text-white hover:bg-[#6CC945] transition-colors">
                                     Agendar cita
                                 </button>

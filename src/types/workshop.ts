@@ -12,3 +12,10 @@ export interface Workshop {
     objectives?: string[];
     content?: string[];
 }
+export type Activity = {
+    id: string;
+    title: string;
+    subtitle: string;
+    image: string;
+    details: string;
+};
