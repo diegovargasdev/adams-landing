@@ -4,8 +4,10 @@ import { WorkshopDetail } from "../components/WorkshopDetail";
 import { useState } from "react";
 import { Hero } from "../components/Hero";
 import { WhoWeAre } from "../components/WhoWeAre";
+import { ConocenosParticipa } from "../components/ConocenosParticipa";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { HelpSection } from "../components/HelpSection";
 
 
 export function Home() {
@@ -30,6 +32,8 @@ export function Home() {
                 onSelectWorkshop={setSelectedIndex}
             />
             <WorkshopDetail workshop={workshops[selectedIndex]} />
+            <ConocenosParticipa />
+            <HelpSection />
         </>
     );
 }

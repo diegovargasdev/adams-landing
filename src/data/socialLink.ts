@@ -29,5 +29,17 @@ export const socialLinks: SocialLink[] = [
         name: "X",
         url: "https://x.com/Armonia_FamIAP",
         icon: "/socialMedia/xIcon.png"
+    },
+    {
+        id: "Whatsapp",
+        name: "WhatsApp",
+        url: "https://wa.me/5569741564",
+        icon: "/socialMedia/whatsappIcon.png"
+    },
+    {
+        id: "Email",
+        name: "Email",
+        url: "mailto:contacto@armoniafamiliar.com.mx",
+        icon: "/socialMedia/emailIcon.png"
     }
 ];
