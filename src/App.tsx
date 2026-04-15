@@ -4,6 +4,7 @@ import { Header } from "./components/layout/Header";
 import { Home } from "./pages/Home";
 import { Footer } from "./components/layout/Footer";
 import LinkInBioPage from "./pages/LinkInBioPage";
+import ColaboraPage from "./components/ColaboraPage";
 
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/workshop/:id" element={<WorkshopDetailPage />} />
         <Route path="/redes" element={<LinkInBioPage />} />
+        <Route path="/colabora" element={<ColaboraPage />} />
       </Routes>
       <Footer />
     </>

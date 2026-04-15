@@ -34,22 +34,19 @@ export function WorkshopsCarousel({
 
                 <div className="relative">
 
-                    {/* Carousel */}
                     <div className="flex items-center gap-6">
 
-                        {/* Left Arrow */}
                         <button
                             onClick={handlePrevious}
-                            className="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:opacity-90 transition"
+                            className="flex-shrink-0 cursor-pointer w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:opacity-90 transition"
                             aria-label="Taller anterior"
                         >
-                            <ChevronLeft className="w-6 h-6" />
+                            <ChevronLeft className="w-6 h-6 cursor-pointer" />
                         </button>
 
-                        {/* Cards */}
                         <div className="flex-1 overflow-hidden">
                             <div
-                                className="flex gap-6 transition-transform duration-300 ease-in-out"
+                                className="flex gap-6 transition-transform duration-300 ease-in-out "
                                 style={{
                                     transform: `translateX(-${selectedIndex * 304}px)`,
                                 }}
@@ -58,16 +55,14 @@ export function WorkshopsCarousel({
                                     <button
                                         key={workshop.id}
                                         onClick={() => onSelectWorkshop(index)}
-                                        className={`flex-shrink-0 w-72 bg-bg rounded-xl overflow-hidden transition-all text-left
-                      ${selectedIndex === index
+                                        className={`flex-shrink-0 w-72 bg-bg rounded-xl overflow-hidden transition-all text-left cursor-pointer
+                                            ${selectedIndex === index
                                                 ? "ring-4 ring-accent shadow-xl scale-105"
                                                 : "hover:shadow-lg"
                                             }
-                    `}
+                                        `}
                                     >
-                                        <div className="aspect-[4/3] overflow-hidden">
-                                            Example of workshop image
-                                        </div>
+                                        <img src={workshop.image} alt={workshop.title} className="w-full h-40 object-scale-down" />
 
                                         <div className="p-6">
                                             <h3 className="text-primary font-semibold">
@@ -78,24 +73,21 @@ export function WorkshopsCarousel({
                                 ))}
                             </div>
                         </div>
-
-                        {/* Right Arrow */}
                         <button
                             onClick={handleNext}
-                            className="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:opacity-90 transition"
+                            className="flex-shrink-0 w-12 h-12 cursor-pointer rounded-full bg-primary text-white flex items-center justify-center hover:opacity-90 transition"
                             aria-label="Siguiente taller"
                         >
-                            <ChevronRight className="w-6 h-6" />
+                            <ChevronRight className="w-6 h-6 cursor-pointer" />
                         </button>
                     </div>
 
-                    {/* Dots */}
                     <div className="flex justify-center gap-2 mt-8">
                         {workshops.map((_, index) => (
                             <button
                                 key={index}
                                 onClick={() => onSelectWorkshop(index)}
-                                className={`h-2 rounded-full transition-all ${index === selectedIndex
+                                className={`h-2 rounded-full  cursor-pointer transition-all ${index === selectedIndex
                                     ? "bg-accent w-8"
                                     : "bg-muted/40 w-2"
                                     }`}

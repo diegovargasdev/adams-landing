@@ -1,73 +1,126 @@
-# React + TypeScript + Vite
+﻿# Landing Armonía
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ¿Qué es este proyecto?
 
-Currently, two official plugins are available:
+Este repositorio contiene una página web de promoción para los talleres y servicios de Armonía Familiar IAP.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+La aplicación está construida con:
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router DOM
+- Lucide Icons
 
-## React Compiler
+## Funcionalidades principales
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Página de inicio con:
+  - sección principal (`Hero`),
+  - quiénes somos,
+  - carrusel de talleres,
+  - detalle dinámico del taller seleccionado,
+  - secciones de colaboración y ayuda.
+- Página de detalle de taller con:
+  - información de fecha, hora y modalidad,
+  - objetivos,
+  - contenido,
+  - botón de inscripción externo.
+- Página de enlaces a redes sociales y contacto.
+- Página de colaboración con opciones para trabajar con el equipo.
 
-## Expanding the ESLint configuration
+## Cómo ejecutar el proyecto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Abrir la terminal en la carpeta del proyecto:
+   ```bash
+   cd c:\Developer\social-service\landing-armonia
+   ```
+2. Instalar dependencias:
+   ```bash
+   npm install
+   ```
+3. Iniciar el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+4. Abrir el navegador en la dirección que indique Vite (normalmente `http://localhost:5173`).
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Comandos útiles
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- `npm run dev`: inicia el proyecto en modo desarrollo con recarga automática.
+- `npm run build`: genera la versión de producción.
+- `npm run preview`: sirve la versión generada para ver cómo queda el build.
+- `npm run lint`: ejecuta ESLint para revisar el código.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Estructura del proyecto
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- `src/App.tsx`: definición de rutas principales.
+- `src/pages/`: páginas principales de la aplicación.
+- `src/components/`: componentes reutilizables.
+- `src/data/workshops.ts`: datos de los talleres.
+- `src/data/socialLink.ts`: enlaces y redes sociales.
+- `src/types/`: tipos TypeScript.
+- `public/`: imágenes y activos estáticos.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Cómo actualizar contenido
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Talleres
+
+Los talleres se administran en `src/data/workshops.ts`.
+
+Para agregar o modificar un taller:
+1. Abrir `src/data/workshops.ts`.
+2. Editar o añadir un objeto dentro del arreglo `workshops`.
+3. Asegurarse de que cada taller tenga un `id` único y campos como:
+   - `name`
+   - `title`
+   - `image`
+   - `description`
+   - `date`
+   - `time`
+   - `modality`
+   - `objectives`
+   - `content`
+4. Si usas imágenes nuevas, colócalas en `public/workShop/<nombre-del-taller>/`.
+
+### Enlaces de redes sociales
+
+Los enlaces y los iconos de redes se configuran en `src/data/socialLink.ts`.
+
+Para actualizar una red social:
+1. Abrir `src/data/socialLink.ts`.
+2. Modificar la URL o el icono de la entrada correspondiente.
+3. Guardar el archivo.
+
+### Rutas y navegación
+
+Las rutas del sitio se definen en `src/App.tsx`:
+- `/` → inicio
+- `/workshop/:id` → detalle de taller
+- `/redes` → página de redes sociales
+- `/colabora` → página de colaboración
+
+Si agregas una nueva página, registra la ruta y el componente en `src/App.tsx`.
+
+## Cómo hacer cambios de diseño
+
+- El estilo se aplica principalmente con clases de Tailwind CSS dentro de los componentes.
+- El estilo global se encuentra en `src/index.css`.
+- Para cambiar colores, tipografía o espaciado, edita las clases Tailwind en los componentes o ajusta la configuración de Tailwind si es necesario.
+
+## Cómo llevar a cabo nuevas actualizaciones
+
+1. Actualiza el contenido o el diseño en los archivos de `src/`.
+2. Prueba en desarrollo con `npm run dev`.
+3. Verifica que no haya errores con `npm run lint`.
+4. Genera el build de producción con `npm run build`.
+5. Si todo está bien, sube los cambios al control de versiones (`git`).
+
+## Consejo para nuevos colaboradores
+
+- Leer `src/App.tsx` para entender la estructura de rutas.
+- Revisar `src/pages/` para conocer el flujo de cada vista.
+- Abrir el sitio en el navegador y navegar al detalle de un taller para ver cómo se cargan los datos.
+
+---
+
+Este instructivo está pensado para personas ajenas al código que deben ejecutar, revisar o actualizar el proyecto de forma sencilla.

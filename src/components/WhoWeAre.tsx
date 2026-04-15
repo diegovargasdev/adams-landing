@@ -11,9 +11,11 @@ export function WhoWeAre() {
 
                     {/* Image */}
                     <div className="order-2 lg:order-1">
-                        <div className="aspect-[4/3] rounded-2xl overflow-hidden">
-                            Ejemplo de uso de ImageWithFallback
-                        </div>
+                        <img
+                            src="/logo/logoComplete.png"
+                            alt="¿Quiénes somos?"
+                            className="w-full h-full object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+                        />
                     </div>
 
                     {/* Text */}
