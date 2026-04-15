@@ -32,7 +32,7 @@ export function Footer() {
                     <div className="space-y-4">
                         <h4 className="font-semibold">Contáctanos</h4>
                         <div className="space-y-2 text-white/80 text-sm">
-                            <p>Email: contacto@armoniafamiliar.org</p>
+                            <p>Email: contacto@armoniafamiliar.com.mx</p>
                             <p>Teléfono: +52 (55) 6974-1564</p>
                         </div>
                     </div>
@@ -86,11 +86,13 @@ export function Footer() {
                         </p>
 
                         <div className="flex gap-6">
-                            <a href="#" className="hover:text-white transition-colors">
+                            <a
+                                href="/documents/aviso_privacidad.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:text-white transition-colors"
+                            >
                                 Aviso de privacidad
-                            </a>
-                            <a href="#" className="hover:text-white transition-colors">
-                                Términos
                             </a>
                         </div>
                     </div>
