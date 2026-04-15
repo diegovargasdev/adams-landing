@@ -166,7 +166,7 @@ export default function WorkshopDetailPage() {
             </section>
 
             {/* Testimonials */}
-            <section className="py-16 bg-white">
+            {/* <section className="py-16 bg-white">
                 <div className="max-w-5xl mx-auto px-6">
                     <h2 className="text-3xl mb-8 text-center text-[#977DA4]">
                         Lo que dicen nuestros participantes
@@ -204,7 +204,7 @@ export default function WorkshopDetailPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Galería de Taller */}
             <section className="py-16 bg-[#F3EBEB]">
