@@ -21,7 +21,7 @@ export const socialLinks: SocialLink[] = [
     {
         id: "facebook",
         name: "Facebook",
-        url: "https://www.facebook.com/ArmoniaFamiliarIAPi",
+        url: "https://www.facebook.com/ArmoniaFamiliarIAP",
         icon: "/socialMedia/facebookIcon.png"
     },
     {
