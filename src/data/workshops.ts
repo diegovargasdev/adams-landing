@@ -12,6 +12,13 @@ export const workshops: Workshop[] = [
             "Las habilidades para la vida son un concepto que fue propuesto por la Organización Mundial de la Salud (OMS) en el año 1993 y ha sido referente para guiar acciones de educación socio-emocional en ámbitos educativos.",
         detailImage:
             "/workShop/lifeSkills/image.png",
+        workshopImages: [
+            "/workShop/lifeSkills/galery/1.jpeg",
+            "/workShop/lifeSkills/galery/2.jpeg",
+            "/workShop/lifeSkills/galery/3.jpeg",
+            "/workShop/lifeSkills/galery/4.jpeg",
+        ],
+        about: "Las habilidades para la vida son un conjunto de competencias que permiten a las personas enfrentar de manera efectiva los desafíos y demandas de la vida diaria. Estas habilidades incluyen la comunicación efectiva, la toma de decisiones, la gestión emocional, el pensamiento crítico y creativo, entre otras. Desarrollar estas habilidades es fundamental para el bienestar personal, las relaciones interpersonales y el éxito en diferentes ámbitos de la vida.",
         date: "15 de febrero, 2026",
         time: "10:00 AM - 12:00 PM",
         modality: "Presencial / Virtual",
@@ -42,6 +49,14 @@ export const workshops: Workshop[] = [
             "El conocer las partes que componen el 'yo', sus manifestaciones, necesidades y habilidades; saber por que actuamos, como lo hacemos y como nos sentimos, es fundamental en el desarrollo de una autoestima sana a final de cuentas.",
         detailImage:
             "/workShop/selfEsteem/image.png",
+        workshopImages: [
+            "/workShop/selfEsteem/galery/1.jpg",
+            "/workShop/selfEsteem/galery/2.jpg",
+            "/workShop/selfEsteem/galery/3.jpg",
+            "/workShop/selfEsteem/galery/4.jpg",
+        ],
+        about:
+            "Taller diseñado para fortalecer la autoestima de mujeres mediante el reconocimiento del yo, el autocuidado y la construcción de una autoimagen positiva.",
         date: "20 de marzo, 2026",
         time: "2:00 PM - 4:00 PM",
         modality: "Presencial",
@@ -69,6 +84,8 @@ export const workshops: Workshop[] = [
             "A mayor percepción de sentido de vida, mejora la salud y el bienestar general aumentando la capacidad de resiliencia, el nivel de motivación, pertenencia y la productividad, así como la mejora de los vínculos, empatía y comunicación, disminuyendo el impacto por eventos traumáticos.",
         detailImage:
             "/workShop/lifeMeaning/image.png",
+        about:
+            "Taller para conectar con el propósito personal, reconocer valores y motivaciones, y encontrar sentido en la vida cotidiana.",
         realImages: [
             "/workShop/lifeMeaning/realImage.png"
         ],
@@ -100,6 +117,8 @@ export const workshops: Workshop[] = [
             "Proporcionar los recursos necesarios a los jóvenes que están por realizar una elección vocacional de acuerdo a sus recursos personales generando en ellas y ellos las estructuras necesarias para la elección de carrera.",
         detailImage:
             "/workShop/vocationalGuidance/image.png",
+        about:
+            "Sesión orientada a ayudar a jóvenes a explorar sus intereses, habilidades y opciones profesionales para tomar decisiones vocacionales con más confianza.",
         realImages: [
             "/workShop/vocationalGuidance/realImage.png"
         ],
@@ -130,6 +149,8 @@ export const workshops: Workshop[] = [
             "Fortalecer la identidad y autoestima en las niñas y los niños por medio del autoconocimiento y resignificación de historia de vida, destacando sus fortalezas y habilidades que les han permitido ser resilientes.",
         detailImage:
             "/workShop/selfEsteemKids/image.png",
+        about:
+            "Espacio lúdico y seguro para que niñas y niños fortalezcan su identidad, reconozcan sus fortalezas y construyan autoestima desde el autoconocimiento.",
         realImages: [
             "/workShop/selfEsteemKids/realImage.png"
         ],
@@ -158,6 +179,14 @@ export const workshops: Workshop[] = [
         description:
             "Al aceptar las heridas que dejaron huella en nuestra infancia inicia el proceso de sanidad, nos responsabilizamos de las situaciones que vivimos en la actualidad utilizando la resiliencia como herramienta para redireccionar nuestro propósito de vida.",
         detailImage: "/workShop/resilientWomen/detailImage.jpg",
+        workshopImages: [
+            "/workShop/resilientWomen/galery/1.jpg",
+            "/workShop/resilientWomen/galery/2.jpg",
+            "/workShop/resilientWomen/galery/3.jpg",
+            "/workShop/resilientWomen/galery/4.jpg",
+        ],
+        about:
+            "Propuesta vivencial que acompaña a mujeres a reconocer heridas del pasado, activar resiliencia y redireccionar su propósito hacia una vida más plena.",
         date: "Por definir",
         time: "4 horas",
         modality: "Presencial / Virtual",
@@ -185,6 +214,14 @@ export const workshops: Workshop[] = [
         description:
             "La educación emocional desde etapas tempranas es clave para el bienestar personal y el desarrollo de habilidades sociales, permitiendo a niñas y niños reconocer, comprender y gestionar sus emociones de forma saludable.",
         detailImage: "/workShop/emotionFair/detailImage.jpg",
+        workshopImages: [
+            "/workShop/emotionFair/galery/1.jpg",
+            "/workShop/emotionFair/galery/2.jpg",
+            "/workShop/emotionFair/galery/3.jpg",
+            "/workShop/emotionFair/galery/4.jpg",
+        ],
+        about:
+            "Experiencia interactiva para niñas y niños que promueve la educación emocional mediante actividades lúdicas, empatía y autorregulación emocional.",
         date: "Por definir",
         time: "Por definir",
         modality: "Presencial",
@@ -212,6 +249,8 @@ export const workshops: Workshop[] = [
         description:
             "La educación emocional es un proceso continuo que permite desarrollar competencias esenciales para la vida. Este taller brinda a los hombres un espacio seguro para reconocer, comprender y gestionar sus emociones, fortaleciendo su bienestar personal y sus relaciones.",
         detailImage: "/workShop/emotionalWorkMen/detailImage.jpg",
+        about:
+            "Taller que ofrece a los hombres un espacio seguro para explorar emociones, desmitificar roles y desarrollar habilidades de gestión emocional.",
         date: "Por definir",
         time: "Por definir",
         modality: "Presencial / Virtual",
@@ -238,8 +277,16 @@ export const workshops: Workshop[] = [
         title: "Mi madre y yo: Sanando el pasado, fortaleciendo el futuro",
         image: "/workShop/motherAndMe/image.png",
         description:
-            "Un viaje de sanación para comprender, amar y perdonar. Este taller permite explorar el impacto de la relación con la figura materna, reconociendo cómo sus experiencias y heridas influyen en nuestra vida actual, promoviendo el bienestar emocional.",
+            "Un viaje de sanación para comprender, amar y perdonar. Este taller permite explorar el impacto de la relación con la figura materna, reconociendo cómo sus experiencias y heridas influyen en nuestra vida actual, Trabajando en ellas y promoviendo el bienestar emocional.",
         detailImage: "/workShop/motherAndMe/detailImage.jpg",
+        workshopImages: [
+            "/workShop/motherAndMe/galery/1.jpg",
+            "/workShop/motherAndMe/galery/2.jpg",
+            "/workShop/motherAndMe/galery/3.jpg",
+            "/workShop/motherAndMe/galery/4.jpg",
+        ],
+        about:
+            "Encuentro para sanar la relación con la figura materna, trabajar el perdón y fortalecer el bienestar emocional desde la comprensión del pasado.",
         date: "Por definir",
         time: "4 horas",
         modality: "Presencial / Virtual",
@@ -269,6 +316,14 @@ export const workshops: Workshop[] = [
         description:
             "Taller enfocado en brindar a niñas y niños de 6 a 10 años herramientas básicas para identificar situaciones de riesgo, reconocer su derecho a la seguridad personal y expresar sus emociones, fomentando la confianza para pedir ayuda y protegerse.",
         detailImage: "/workShop/childAbusePrevention/detailImage.png",
+        workshopImages: [
+            "/workShop/childAbusePrevention/galery/1.jpeg",
+            "/workShop/childAbusePrevention/galery/2.jpeg",
+            "/workShop/childAbusePrevention/galery/3.jpeg",
+            "/workShop/childAbusePrevention/galery/4.jpeg",
+        ],
+        about:
+            "Taller preventivo para niñas y niños que enseña a identificar riesgos, respetar límites y pedir ayuda de forma segura.",
         date: "Por definir",
         time: "Por definir",
         modality: "Presencial",
@@ -298,6 +353,14 @@ export const workshops: Workshop[] = [
         description:
             "Taller enfocado en fortalecer la inteligencia emocional de deportistas y atletas, desarrollando habilidades para reconocer, gestionar y regular sus emociones, con el objetivo de mejorar su rendimiento deportivo y bienestar psicológico.",
         detailImage: "/workShop/feelToWin/detailImage.jpg",
+        workshopImages: [
+            "/workShop/feelToWin/galery/1.jpeg",
+            "/workShop/feelToWin/galery/2.jpeg",
+            "/workShop/feelToWin/galery/3.jpeg",
+            "/workShop/feelToWin/galery/4.jpeg",
+        ],
+        about:
+            "Sesión dirigida a deportistas para fortalecer su inteligencia emocional, mejorar el manejo de la presión y potenciar el rendimiento deportivo con equilibrio mental.",
         date: "Por definir",
         time: "Por definir",
         modality: "Presencial / Virtual",
