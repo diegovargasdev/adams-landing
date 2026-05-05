@@ -41,7 +41,7 @@ export function HelpSection() {
                             <div className="flex items-center gap-3">
                                 <div className="w-2 h-2 rounded-full bg-[#7CDB55]" />
                                 <span className="text-[#3A3364]">
-                                    Facilitadores y consejeros profesionales
+                                    Terapeutas y consejeros profesionales
                                 </span>
                             </div>
 

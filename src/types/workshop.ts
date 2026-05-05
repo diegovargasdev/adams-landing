@@ -7,10 +7,12 @@ export interface Workshop {
     name?: string;
     date?: string;
     time?: string;
+    about?: string;
     modality?: string;
     realImages?: string[];
     objectives?: string[];
     content?: string[];
+    workshopImages?: string[];
 }
 export type Activity = {
     id: string;

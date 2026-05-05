@@ -36,9 +36,11 @@ export function WhoWeAre() {
                         </p>
 
                         <p className="text-muted max-w-xl">
-                            Nuestro equipo de facilitadores capacitados y profesionales de la salud mental
-                            trabajan juntos para crear espacios acogedores que promueven la sanación,
-                            el crecimiento y la resiliencia.
+                            Nuestro equipo de terapeutas capacitados y profesionales de la salud mental
+                            trabajan juntos para Apoyar, Educar, Informar, Orientar y Concientizar a las
+                            personas usuarias por medio de programas de desarrollo humano y herramientas
+                            psicológicas con el objetivo de restaurar su integridad como seres humanos para
+                            devolver su fortaleza a la familia, y vuelva a ocupar su lugar como núcleo en la sociedad.
                         </p>
                     </div>
 

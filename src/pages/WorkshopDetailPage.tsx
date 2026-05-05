@@ -1,8 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import {
-    Calendar,
-    Clock,
     MapPin,
 } from "lucide-react";
 import { workshops } from "../data/workshops";
@@ -12,14 +10,6 @@ export default function WorkshopDetailPage() {
     const { id } = useParams<{ id: string }>();
     const navigate = useNavigate();
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-    const workshopImages = [
-        "/galery/1.jpeg",
-        "/galery/2.jpeg",
-        "/galery/3.jpeg",
-        "/galery/4.jpeg",
-        "/galery/5.jpeg"
-    ];
 
     const workshop = workshops.find(
         (w) => w.id === Number(id)
@@ -31,10 +21,10 @@ export default function WorkshopDetailPage() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % workshopImages.length);
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % (workshop?.workshopImages?.length || 1));
         }, 3000); // Cambia de imagen cada 3 segundos
         return () => clearInterval(interval);
-    }, [workshopImages.length]);
+    }, [workshop?.workshopImages?.length]);
 
     if (!workshop) {
         return (
@@ -86,14 +76,6 @@ export default function WorkshopDetailPage() {
                         {/* Info block */}
                         <div className="bg-[#A9AABC] rounded-xl p-6 space-y-3">
                             <div className="flex items-center gap-3 text-[#3A3364]">
-                                <Calendar size={20} />
-                                {workshop.date}
-                            </div>
-                            <div className="flex items-center gap-3 text-[#3A3364]">
-                                <Clock size={20} />
-                                {workshop.time}
-                            </div>
-                            <div className="flex items-center gap-3 text-[#3A3364]">
                                 <MapPin size={20} />
                                 {workshop.modality}
                             </div>
@@ -115,8 +97,7 @@ export default function WorkshopDetailPage() {
                         Sobre este taller
                     </h2>
                     <p className="text-[#3A3364] leading-relaxed">
-                        Este taller está diseñado para brindar un espacio seguro,
-                        acompañamiento emocional y herramientas prácticas para la vida diaria.
+                        {workshop.about}
                     </p>
                 </div>
             </section>
@@ -207,45 +188,47 @@ export default function WorkshopDetailPage() {
             </section> */}
 
             {/* Galería de Taller */}
-            <section className="py-16 bg-[#F3EBEB]">
-                <div className="max-w-6xl mx-auto px-6">
-                    <h2 className="text-3xl mb-12 text-center text-[#977DA4]">
-                        Galería de nuestro taller
-                    </h2>
+            {workshop.workshopImages && workshop.workshopImages.length > 0 && (
+                <section className="py-16 bg-[#F3EBEB]">
+                    <div className="max-w-6xl mx-auto px-6">
+                        <h2 className="text-3xl mb-12 text-center text-[#977DA4]">
+                            Galería de nuestro taller
+                        </h2>
 
-                    <div className="grid md:grid-cols-3 gap-6">
-                        {[0, 1, 2].map((offset) => {
-                            const imageIndex = (currentImageIndex + offset) % workshopImages.length;
-                            return (
-                                <div
-                                    key={offset}
-                                    className="overflow-hidden rounded-xl shadow-lg h-80 cursor-pointer group"
-                                >
-                                    <img
-                                        src={workshopImages[imageIndex]}
-                                        alt={`Taller imagen ${imageIndex + 1}`}
-                                        className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
-                                    />
-                                </div>
-                            );
-                        })}
-                    </div>
+                        <div className="grid md:grid-cols-3 gap-6">
+                            {[0, 1, 2].map((offset) => {
+                                const imageIndex = (currentImageIndex + offset) % workshop.workshopImages!.length;
+                                return (
+                                    <div
+                                        key={offset}
+                                        className="overflow-hidden rounded-xl shadow-lg h-80 cursor-pointer group"
+                                    >
+                                        <img
+                                            src={workshop.workshopImages![imageIndex]}
+                                            alt={`Taller imagen ${imageIndex + 1}`}
+                                            className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                                        />
+                                    </div>
+                                );
+                            })}
+                        </div>
 
-                    <div className="flex justify-center gap-2 mt-8">
-                        {workshopImages.map((_, index) => (
-                            <button
-                                key={index}
-                                onClick={() => setCurrentImageIndex(index)}
-                                className={`w-3 h-3 rounded-full transition-all ${index === currentImageIndex
-                                    ? "bg-[#7CDB55] w-8"
-                                    : "bg-[#A9AABC]"
-                                    }`}
-                                aria-label={`Ir a imagen ${index + 1}`}
-                            />
-                        ))}
+                        <div className="flex justify-center gap-2 mt-8">
+                            {workshop.workshopImages!.map((_, index) => (
+                                <button
+                                    key={index}
+                                    onClick={() => setCurrentImageIndex(index)}
+                                    className={`w-3 h-3 rounded-full transition-all ${index === currentImageIndex
+                                        ? "bg-[#7CDB55] w-8"
+                                        : "bg-[#A9AABC]"
+                                        }`}
+                                    aria-label={`Ir a imagen ${index + 1}`}
+                                />
+                            ))}
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            )}
 
             {/* Contact and Assistance Section */}
             <section className="py-16 bg-[#F3EBEB]">
